@@ -3,69 +3,122 @@
     <head>
         <meta charset="UTF-8">
         <title>Alieks CV</title>
+        <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
-        <table>
-            <tr>
-                <td><img src="https://cuad.ask.fm/assets2/150/197/832/704/normal/file.jpg" width="200"></td>
-                <td><h1>Alieks Lapan</h1>
-                    <p><em>I am <strong>Ukrainian</strong> from GB.</em></p>
-                    <p>I want to create my new life.</p></td>
-        </tr>
-        </table>
-        <hr>
-        <h2>My social networks</h2>
-        <ul type="square">
-            <li>inst: <a href="https://www.instagram.com/" target="_blank"> @alexlapan</a></li>
-            <li>facebook: Alieks Lapan</li>
-        </ul>
-        <hr>
-        <h2>My hobbies</h2>
-        <ol>
-            <li>Money</li>
-            <li>More money</li>
-            <li>Much money</li>
-        </ol>
-        <hr>
-        <h2>My work</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Company</th>
-                    <th>Position</th>
-                    <th>Year</th>
-                </tr>
-             </thead>
+        <div class="container">
+        <div class="info">
+                <img src="myfoto.jpg" 
+                    alt="My friend"
+                    class="avatar">
+
+                    <div class="info-text">
+                <h1>Alieks Lapan | Project manager</h1>
+                    <p class="p1">I am a Project Manager with over 4 years of experience and great desire and commitment to project management. My goal in project development is “Faster-Smarter-Cheaper”. I had the opportunity to work on multiple projects and manage the work for geographically distributed teams and subcontractors.</p>
+            <p>Phone number: <a>+447456094616</a>
+            |
+            Email: <a>alekslapan@gmail.com</a></p>
+            <p>Inst: <a href="https://www.instagram.com/" target="_blank"> @alexlapan</a>
+            |
+            Facebook: <a href="https://www.facebook.com/" target="_blank"> Alieks Lapan</a></p>
+                </div>
+            </div>
+        
+        <div class="card bg-yellow">
+            <h2>EXPERIENCE</h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>GreatPro</td>
+                        <td>QA&QC manager</td>
+                        <td>2017 - 2018</td>
+                    </tr>
+                    <tr>
+                        <td>PBA</td>
+                        <td>Project manager</td>
+                        <td>2018 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Sluga Narodu</td>
+                        <td>Project manager</td>
+                        <td>2020 - 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Stanmore</td>
+                        <td>Fucking fixer</td>
+                        <td>2022 - now</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+    </div>
+    <div class="card bg-green">
+        <h2>EDUCATION</h2>
+        <table class="table">
             <tbody>
                 <tr>
-                    <td>Sluga Narodu</td>
-                    <td>PM</td>
-                    <td>2020 - 2022</td>
+                    <td>NTUU "IGOR SIKORSKY KYIV POLYTECHNIC INSTITUTE"</td>
+                    <td>Bachelor. IT security specialist</td>
+                    <td>2015 - 2019</td>
                 </tr>
                 <tr>
-                    <td>Stanmore</td>
-                    <td>Fixer</td>
-                    <td>2022 - 2022</td>
+                    <td>INTERNATIONAL UNIVERSITY OF FINANCE</td>
+                    <td>Master. Management and analysis</td>
+                    <td>2017 - 2022</td>
+                </tr>
+                <tr>
+                    <td>NU "ODESA LAW ACADEMY"</td>
+                    <td>Master. Public administration</td>
+                    <td>2020 - 2022</td>
                 </tr>
             </tbody>
             <tfoot></tfoot>
         </table>
-        <hr>
-        <h2>Second page of my CV</h2>
-        <p><a href="2ndpage.html"><strong>Click here</strong></a></p>
-        <hr>
+    </div>
+
+    <div class="card bg-red">
+        <h2>SKILLS</h2>
+        <ul class="ulcircle">
+            <li>Ability to manage and deliver on multiple projects in IT.</li>
+            <li>Good skill in account management, direct communication with current and prospect clients.</li>
+            <li>Good understanding of project management methods - agile (scrum, kanban), watherfall.</li>
+            <li>Strong user of task tracking systems like Jira, Trello, etc.</li>
+            <li>Enable to take part in budget planning, forecasting, and execution.</li>
+            <li>Have a good technical background in university (HTML/CSS/JS/C++/Java and etc).</li>
+            <li>Have strong communication and analytic skills.</li>
+        </ul>
+    </div>
+
+    <div class="card bg-blue">
+        <h2>CERTIFICATES</h2>
+        <ul class="ulnone">
+            <li>Management | Dnipro Polytechnic</li>
+            <li>Keep up | Alexander Vasilenko</li>
+            <li>Master of Communications | Tatyana Jumma</li>
+            <li>Basics of lobbying | Prometheus</li>
+            <li>Speech improvisation | Elena Kantil</li>
+        </ul>
+    </div>
+<div class="contact">
         <h2>Contact me</h2>
         <form action="/">
-            <label for="name">Your name:</label>
-            <input type="text" id="name" placeholder="Enter your name">
-            <br>
-            <label for="email">Your email:</label>
-            <input type="email" id="email" placeholder="Your email" value="test@test.com">
-            <br>
-            <label for="text">Your text:</label>
-            <textarea id="text" rows="5"></textarea>
-            <br>
-            <input type="submit" value="Contact">
+            <div class="row">
+            <div class="form-group"><label for="name">Your name:</label>
+            <input type="text" id="name" placeholder="Enter your name"></div>
+            
+            <div class="form-group"><label for="email">Your email:</label>
+            <input type="email" id="email" placeholder="Your email" value="test@test.com"></div>
+            </div>
+            <div class="form-group"><label for="text">Your text:</label>
+            <textarea id="text" rows="5"></textarea></div>
+            
+            <input class="btn" type="submit" value="Contact">
         </form>
+        </div>
+
+        <div class="position">
+            <div class="box"></div>
+        </div>
+        </div>
     </body>
 </html>
